@@ -1,0 +1,21 @@
+{
+    "name": "kowali/html",
+    "description": "Html foundation",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Thomas Hupkens",
+            "email": "thomas@hupkens.be"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "illuminate/support": "4.2.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Kowali\\Html\\" : "src/Kowali/Html/"
+        }
+    },
+    "minimum-stability": "stable"
+}
