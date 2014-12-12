@@ -93,12 +93,12 @@ class FormBuilder extends Form {
 
     }
 
-    public function selectGroup($id, $label, $options, array $attributes = [])
+    public function selectGroup($id, $label, $options, $default = null, array $attributes = [])
     {
 
-        return $this->group(function($form, $id, $attributes) use ($options){
+        return $this->group(function($form, $id, $attributes) use ($options, $default){
 
-            return $form->select($id, $options, null, $attributes);
+            return $form->select($id, $options, $default, $attributes);
 
         }, $id, $label, $attributes);
 
