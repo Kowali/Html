@@ -60,6 +60,16 @@ class FormBuilder extends Form {
 
     }
 
+    public function passwordGroup($id, $label, array $attributes = [])
+    {
+
+        return $this->group(function($form, $id, $attributes){
+
+            return $form->password($id, $attributes);
+
+        }, $id, $label, $attributes);
+
+    }
 
     public function emailGroup($id, $label, array $attributes = [])
     {
